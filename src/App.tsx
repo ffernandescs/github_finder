@@ -1,13 +1,14 @@
+import { Box, Center, Flex, Text } from '@chakra-ui/react'
 import { Outlet } from 'react-router-dom'
 
-import classes from "./App.module.css"
-
 function App() {
-  return (
-    <div className={classes.app}>
-     <h1>GitHub Finder</h1>
-     <Outlet />
-    </div>
+  return ( 
+    <Box w='100%' display='flex' flexDirection='column' alignItems='center'>
+      <Center w='100%' bg='blue.900' padding='10' marginBottom='5'>
+        <Text color='white' fontSize='4xl'>GitHub Finder</Text>
+      </Center>
+      <Outlet />
+    </Box>
   )
 }
 
